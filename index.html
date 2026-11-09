@@ -30,14 +30,14 @@
           <p id="erreur-mode" class="erreur" aria-live="polite"></p>
         </fieldset>
 
-        <fieldset id="champ-campus" class="champ" hidden disabled>
+        <fieldset id="champ-campus" class="champ" >
           <legend>Votre campus</legend>
           <!-- Insérer ici les clones de template-campus. Activer ce fieldset en présentiel. -->
           <div id="liste-campus" class="choix choix-grille"></div>
           <p id="erreur-campus" class="erreur" aria-live="polite"></p>
         </fieldset>
 
-        <div id="champ-email" class="champ" hidden>
+        <div id="champ-email" class="champ" >
           <label for="email">Adresse e-mail</label>
           <input
             id="email"
@@ -54,7 +54,7 @@
         <button type="submit">Confirmer mon inscription</button>
       </form>
 
-      <section id="recapitulatif" aria-labelledby="titre-recapitulatif" hidden>
+      <section id="recapitulatif" aria-labelledby="titre-recapitulatif" >
         <h2 id="titre-recapitulatif">Récapitulatif de l’inscription</h2>
         <div id="recapitulatif-contenu" aria-live="polite"></div>
       </section>
@@ -63,22 +63,22 @@
     <!-- Cloner template.content, compléter les valeurs et les textes, puis insérer le clone.
        Chaque label enveloppe son input. Les radios d'un groupe partagent le même name.
        Aucun id dans les templates afin d'éviter les doublons lors du clonage. -->
-    <template id="template-atelier">
-      <label class="carte-choix">
+     <template id="template-atelier">
+       <label class="carte-choix">
         <input
           type="radio"
           name="atelier"
           value=""
           required
           aria-describedby="erreur-atelier"
-        />
+        /> 
         <span>
           <strong class="atelier-titre"></strong>
           <span class="atelier-places detail"></span>
         </span>
       </label>
     </template>
-
+<!-- 
     <template id="template-mode">
       <label class="carte-choix">
         <input
@@ -90,8 +90,8 @@
         />
         <span class="mode-libelle"></span>
       </label>
-    </template>
-
+    </template> -->
+<!-- 
     <template id="template-campus">
       <label class="carte-choix">
         <input
@@ -103,7 +103,7 @@
         />
         <span class="campus-libelle"></span>
       </label>
-    </template>
+    </template> -->
 
     <template id="template-recapitulatif">
       <dl class="recap-liste">
